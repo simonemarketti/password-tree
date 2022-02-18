@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Tree</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Login section -->
+      <section class="login">
+        <h1>Password Tree</h1>
+        <!-- Form -->
+        <form class="form">
+          <label for="username">Username:</label>
+          <input id="username" name="username" type="text" />
+          <label for="pswd">Password:</label>
+          <input id="pswd" type="password" name="pswd" />
+          <button id="submit" type="submit" disabled>Register</button>
+        </form>
+      </section>
+
+      <!-- Tree section -->
+      <section class="tree">
+        <!-- Image container -->
+        <div id="img-container" class="img-container">
+          <img src="./assets/1.png" alt="seed" class="hide" />
+          <img src="./assets/2.png" alt="little-plant" class="hide" />
+          <img src="./assets/3.png" alt="medium-plant" class="hide" />
+          <img src="./assets/4.png" alt="tree" class="hide" />
+          <img src="./assets/5.png" alt="flower-tree" class="hide" />
+        </div>
+        <!-- Password requirements -->
+        <div class="pswd-info" id="pswd-info">
+          <h4>Password must meet these requirements:</h4>
+          <ul class="info-list">
+            <li id="letter" class="invalid">
+              At least <strong>one letter</strong>
+            </li>
+            <li id="capital" class="invalid">
+              At least <strong>one capital letter</strong>
+            </li>
+            <li id="number" class="invalid">
+              At least <strong>one number</strong>
+            </li>
+            <li id="length" class="invalid">
+              Be at least <strong>8 characters</strong>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

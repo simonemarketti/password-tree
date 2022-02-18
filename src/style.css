@@ -1,0 +1,140 @@
+/* Universal */
+body {
+  background: #edf1f4;
+  font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans",
+    "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans serif;
+  font-size: 16px;
+  color: #444;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Login section */
+.login {
+  width: 400px;
+  padding: 0px;
+  background: #fefefe;
+  border: 1px solid #c4cddb;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 24px;
+  text-align: center;
+  background: #eff4f7;
+  border-radius: 5px 5px 0 0;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form input {
+  padding: 1em;
+  border: 1px solid #d5d9da;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #e8e9eb inset;
+  width: 250px;
+  font-size: 1em;
+  outline: 0; /* remove webkit focus styles */
+}
+.form input:focus {
+  border: 1px solid #b9d4e9;
+  box-shadow: 0 0 5px #b9d4e9;
+}
+
+.form label {
+  color: #555;
+  margin-top: 20px;
+}
+
+button {
+  background: #3a7d34;
+  border: 1px solid #326fa9;
+  color: #fff;
+  text-shadow: 0 1px 0 #1e3c5e;
+  font-size: 0.875em;
+  padding: 8px 15px;
+  width: 150px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+button:disabled {
+  background: #e0acad;
+  box-shadow: none;
+}
+
+button:active {
+  background: #05720b;
+  box-shadow: none;
+  text-shadow: 0 -1px 0 #1e3c5e;
+  cursor: pointer;
+}
+
+/* Tree section */
+.tree {
+  display: flex;
+  flex-direction: column;
+  background: #fefefe;
+  border: 1px solid #c4cddb;
+  border-radius: 5px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 400px;
+  height: 350px;
+}
+
+.img-container img {
+  object-fit: none;
+}
+
+.hide {
+  display: none;
+}
+
+/* Info section */
+.pswd-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fefefe;
+  font-size: 0.875em;
+  border-radius: 5px;
+}
+
+.info-list {
+  padding: 0;
+}
+
+.info-list li {
+  list-style-type: none;
+}
+
+.invalid {
+  background: url(./assets/cancel.png) no-repeat 0 50%;
+  padding-left: 22px;
+  line-height: 24px;
+  color: #ec3f41;
+}
+.valid {
+  background: url(./assets/tick.png) no-repeat 0 50%;
+  line-height: 24px;
+  padding-left: 22px;
+  color: #3a7d34;
+}

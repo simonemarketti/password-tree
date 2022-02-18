@@ -1,0 +1,23 @@
+{
+  "name": "pass-validator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "autoprefixer": "postcss src/style.css --use autoprefixer -o style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.2",
+    "@babel/preset-env": "^7.16.11",
+    "autoprefixer": "^10.4.2",
+    "postcss-cli": "^9.1.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
