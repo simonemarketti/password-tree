@@ -97,11 +97,12 @@ button:active {
   justify-content: center;
   align-items: flex-end;
   width: 400px;
-  height: 350px;
+  height: 210px;
 }
 
 .img-container img {
-  object-fit: none;
+  height: 200px;
+  object-fit: scale-down;
 }
 
 .hide {
